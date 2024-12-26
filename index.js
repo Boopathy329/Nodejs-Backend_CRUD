@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use("/users", userRouter);
+app.use("/user", userRouter);
 
 mongoose
   .connect("mongodb://localhost:27017/crud")
